@@ -3,7 +3,13 @@
 :root {
     --main-color: black;
     font-family: 'Raleway', sans-serif;
-}
+    --accent-color: red;
+    }
+
+    body {
+        max-width: 980px;
+        margin: auto;
+    }
 
 header .logo {
     font-family: 'Hanalei', cursive;
@@ -16,11 +22,33 @@ header .menu {
     display: flex;
     list-style-type: none;
     justify-content: space-around;
-    padding:  0;
+    padding: 0;
 }
 
 header .menu a {
     color: var(--main-color);
     text-transform:  uppercase;
     text-decoration: none;
+    border: 1px solid transparent;
+}
+
+header .menu a:hover {
+    border: 1px solid var(--accent-color);
+}
+
+@media (min-width: 550px) {
+    header nav {
+        display: flex;
+        align-items: center;
+    }
+
+    header .menu {
+        flex: 1;
+    }
+
+header .banner {
+    min-height: 500px;
+    background-image: url(../image/auto.jpg);
+    background-size: cover;
+    background-position: center;
 }
