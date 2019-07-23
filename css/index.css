@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Hanalei|Raleway&display=swap');
+
+:root {
+    --main-color: black;
+    font-family: 'Raleway', sans-serif;
+}
+
+header .logo {
+    font-family: 'Hanalei', cursive;
+    font-size: 3rem ;
+    text-align: center;
+    margin: 0;
+}
+
+header .menu {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    padding:  0;
+}
+
+header .menu a {
+    color: var(--main-color);
+    text-transform:  uppercase;
+    text-decoration: none;
+}
